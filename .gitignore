@@ -1,0 +1,17 @@
+# env
+.env
+
+# virtualenv
+.venv/
+venv/
+
+# python
+**/__pycache__/
+*.pyc
+.pytest_cache/
+
+# app artifacts
+runs/
+
+# os
+.DS_Store
