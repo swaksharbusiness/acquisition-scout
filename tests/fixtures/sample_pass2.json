@@ -1,0 +1,44 @@
+{
+  "hunt_results": [
+    {
+      "original_canonical_key": "hash:abc123def456",
+      "final_canonical_key": "url:https://www.bizbuysell.com/business-for-sale/home-services-olathe/123456",
+      "specific_listing_url": "https://www.bizbuysell.com/business-for-sale/home-services-olathe/123456/",
+      "listing_id": "123456",
+      "found_by_query_type": "phrase_search",
+      "queries_tried": [
+        {
+          "type": "id_search",
+          "query": "NOT_AVAILABLE",
+          "results_returned": 0
+        },
+        {
+          "type": "phrase_search",
+          "query": "\"home services Olathe\" bizbuysell",
+          "results_returned": 5
+        }
+      ],
+      "hunt_outcome": "found_specific_url"
+    },
+    {
+      "original_canonical_key": "hash:zzz999aaa111",
+      "final_canonical_key": "hash:zzz999aaa111",
+      "specific_listing_url": null,
+      "listing_id": null,
+      "found_by_query_type": null,
+      "queries_tried": [
+        {
+          "type": "phrase_search",
+          "query": "\"Mexican Restaurant Kansas City\" bizquest",
+          "results_returned": 3
+        },
+        {
+          "type": "fallback_search",
+          "query": "Mexican Restaurant Kansas City site:bizquest.com",
+          "results_returned": 2
+        }
+      ],
+      "hunt_outcome": "not_found"
+    }
+  ]
+}
